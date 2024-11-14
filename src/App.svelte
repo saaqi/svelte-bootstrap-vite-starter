@@ -37,7 +37,7 @@
       <div>
         {#each logoLinks as { link, img, alt, className, id }, index (id)}
           <a href={link} target="_blank" rel="noreferrer">
-            <img src={img} class="logo {className}" alt={alt} />
+            <img src={img} class="img-fluid logo {className}" alt={alt} />
           </a>
         {/each}
       </div>

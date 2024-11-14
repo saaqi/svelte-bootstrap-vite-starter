@@ -1,0 +1,31 @@
+{
+  "name": "svelte-bootstrap-vite-starter",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Practice Sveltejs.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "test": "vite preview",
+    "bootstrap": "sass --no-source-map ./src/scss/bs-dynamic.scss ./src/bootstrap.css",
+    "push": "git add . && git commit -m \"patch fixes\" && npm version patch && git push",
+    "push-minor": "git add . && git commit -m \"minor updates\" npm version minor && git push",
+    "push-major": "git add . && git commit -m \"major updates\" && npm version major && git push"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49",
+    "sass-embedded": "^1.80.7",
+    "svelte": "^5.1.3",
+    "vite": "^5.4.10",
+    "vite-plugin-minify": "^2.0.1",
+    "vite-plugin-webfont-dl": "^3.9.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

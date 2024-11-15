@@ -8,10 +8,8 @@
     "dev": "vite",
     "build": "vite build --emptyOutDir",
     "test": "vite preview",
-    "bootstrap": "sass --no-source-map ./src/scss/bs-dynamic.scss ./src/bootstrap.css",
-    "push": "git add . && git commit -m \"patch fixes\" && npm version patch && git push",
-    "push-minor": "git add . && git commit -m \"minor updates\" npm version minor && git push",
-    "push-major": "git add . && git commit -m \"major updates\" && npm version major && git push"
+    "build-bootstrap": "sass --no-source-map ./src/scss/bs-dynamic.scss ./src/bootstrap.css",
+    "push": "git add . && git commit -m \"patch fixes\" && npm version patch && git push"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",

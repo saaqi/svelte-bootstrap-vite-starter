@@ -1,7 +1,8 @@
 <script>
   import svelteLogo from "./assets/svelte.svg";
-  import viteLogo from "/vite.svg";
+  import viteLogo from "./assets/vite.svg";
   import saaqiLogo from "./assets/logo.svg";
+  import bootstrap from "./assets/bootstrap.svg";
   import Counter from "./lib/Counter.svelte";
 
   const logoLinks = [
@@ -18,26 +19,35 @@
       className: "svelte",
     },
     {
+      link: "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
+      img: bootstrap,
+      alt: "Bootstrap Logo",
+      className: "bs",
+    },
+    {
       link: "https://saqibtech.com",
       img: saaqiLogo,
       alt: "Saqib Islam - UI/UX Desginer & Full Stack Developer",
       className: "saaqi",
     },
-  ].map((item, index) => {
-    return {
-      ...item,
-      id: `logos-${index}`,
-    };
-  });
+  ];
 </script>
 
-<main>
-  <div class="container vh-100 d-flex align-items-center">
+<main class="bg-dark text-light">
+  <div class="container svh-100 d-flex align-items-center py-5">
     <div class="row">
-      <div>
-        {#each logoLinks as { link, img, alt, className, id }, index (id)}
+      <div
+        class="d-flex flex-row flex-wrap justify-content-md-start justify-content-center gap-5 mb-5"
+      >
+        {#each logoLinks as { link, img, alt, className }, index ("logo#" + index)}
           <a href={link} target="_blank" rel="noreferrer">
-            <img src={img} class="img-fluid logo {className}" alt={alt} />
+            <img
+              src={img}
+              class="logo {className}"
+              alt={alt}
+              height="60px"
+              width="60px"
+            />
           </a>
         {/each}
       </div>
@@ -51,21 +61,22 @@
       </div>
 
       <p>
-        Check out <a
+        Check out
+        <a
           href="https://github.com/sveltejs/kit#readme"
           target="_blank"
-          rel="noreferrer">SvelteKit</a
-        >, the official Svelte app framework powered by Vite!
-      </p>
-
-      <p class="read-the-docs">
-        Click on the Vite and Svelte logos to learn more
+          class="text-decoration-underline fw-bold"
+          rel="noreferrer"
+        >
+          SvelteKit
+        </a>
+        , the official Svelte app framework powered by Vite!
       </p>
 
       <p>
         Written by
         <a
-          class="text-decoration-underline"
+          class="text-decoration-underline link-warning"
           href="https://saqibtech.com"
           title="Saqib Islam - UI/UX Desginer &amp; Full Stack Developer"
         >
@@ -78,8 +89,6 @@
 
 <style>
   .logo {
-    height: 6em;
-    padding: 1.5em;
     will-change: filter;
     transition: filter 300ms;
   }
@@ -92,7 +101,7 @@
   .logo.saaqi:hover {
     filter: drop-shadow(0 0 2em #374162);
   }
-  .read-the-docs {
-    color: #888;
+  .logo.bs:hover {
+    filter: drop-shadow(0 0 2em #007bff);
   }
 </style>

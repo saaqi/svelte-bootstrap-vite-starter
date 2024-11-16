@@ -1,5 +1,5 @@
 const IN_PRODUCTION = process.env.NODE_ENV === 'production';
-// const bootstrap = "node_modules/bootstrap"
+const bootstrap = 'node_modules/bootstrap';
 
 module.exports = {
 	plugins: [
@@ -8,7 +8,7 @@ module.exports = {
 				content: [
 					'index.html',
 					'./src/**/*.js',
-					'./src/**/*.svelte'
+					'./src/**/*.svelte',
 					// --- Import only the required components.
 					// `${bootstrap}/js/dist/alert.js`,
 					// `${bootstrap}/js/dist/base-component.js`,
@@ -16,7 +16,7 @@ module.exports = {
 					// `${bootstrap}/js/dist/carousel.js`,
 					// `${bootstrap}/js/dist/collapse.js`,
 					// `${bootstrap}/js/dist/dropdown.js`,
-					// `${bootstrap}/js/dist/modal.js`,
+					`${bootstrap}/js/dist/modal.js`
 					// `${bootstrap}/js/dist/offcanvas.js`,
 					// `${bootstrap}/js/dist/popover.js`,
 					// `${bootstrap}/js/dist/scrollspy.js`,
@@ -30,12 +30,6 @@ module.exports = {
 				},
 				keyframes: true, // remove unsed keyframe rules
 				variables: true // remove unused variables as well
-				// safelist: [
-				//   /-(leave|enter|appear)(|-(to|from|active))$/,
-				//   /^(?!(|.*?:)cursor-move).+-move$/,
-				//   /^router-link(|-exact)-active$/,
-				//   /data-v-.*/,
-				// ],
 			}),
 
 		IN_PRODUCTION && require('autoprefixer'),

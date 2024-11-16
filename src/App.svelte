@@ -4,7 +4,7 @@
   import Modal from './components/Modal.svelte';
 </script>
 
-<main class="bg-dark text-bg-dark">
+<main>
   <div class="container svh-100 d-flex align-items-center py-5">
     <div class="row text-center text-md-start">
       <div class="mb-5 d-flex gap-3 justify-content-md-start justify-content-center">
@@ -15,9 +15,22 @@
         <h1 class="h2">Vite + Svelte + Bootstrap</h1>
       </div>
 
-      <div class="mb-5">
-        <Counter />
-        <Modal />
+      <div class="mb-5 col-xl-4 col-md-6">
+        <div class="mb-3 d-flex justify-content-between gap-3">
+          <Counter />
+          <Modal />
+        </div>
+
+        <div>
+          <a
+            href="https://pagespeed.web.dev/report?url={window.location.href}"
+            target="_blank"
+            class="btn btn-light w-100"
+            rel="noreferrer"
+          >
+            Google PageSpeed Report
+          </a>
+        </div>
       </div>
 
       <p>
@@ -25,7 +38,7 @@
         <a
           href="https://github.com/sveltejs/kit#readme"
           target="_blank"
-          class="text-decoration-underline fw-bold"
+          class="fw-semibold"
           rel="noreferrer"
         >
           SvelteKit
@@ -34,20 +47,9 @@
       </p>
 
       <p>
-        <a
-          href="https://pagespeed.web.dev/report?url={window.location.href}"
-          target="_blank"
-          class="text-decoration-underline link-light"
-          rel="noreferrer"
-        >
-          Google PageSpeed Report
-        </a>
-      </p>
-
-      <p>
         Written by
         <a
-          class="text-decoration-underline link-warning"
+          class="link-secondary"
           href="https://saqibtech.com"
           title="Saqib Islam - UI/UX Desginer &amp; Full Stack Developer"
         >

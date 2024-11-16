@@ -5,6 +5,6 @@
 
 <!-- onclick event handler is set to the increment function -->
 <!-- Button text displays the current count and the word "time" with appropriate pluralization -->
-<button class="btn btn-secondary" onclick={() => count++}>
+<button class="btn btn-secondary w-100" onclick={() => count++}>
   Pressed {count} time{count !== 1 ? 's' : ''}
 </button>

@@ -6,7 +6,7 @@
 <!-- Button trigger modal -->
 <button
   type="button"
-  class="btn btn-primary dark"
+  class="btn btn-primary w-100"
   data-bs-toggle="modal"
   data-bs-target="#demoModal"
 >
@@ -21,7 +21,7 @@
   aria-labelledby="demoModalLabel"
   aria-hidden="true"
 >
-  <div class="modal-dialog modal-dialog-centered" data-bs-theme="dark">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content bg-body-secondary">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="demoModalLabel">Demo Modal title</h1>

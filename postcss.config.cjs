@@ -24,6 +24,7 @@ module.exports = {
           // `${bootstrap}/js/dist/toast.js`,
           // `${bootstrap}/js/dist/tooltip.js`,
         ],
+        whitelistPatterns: [/svelte-/, /fa-icon/],
         defaultExtractor(content) {
           const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '');
           return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || [];

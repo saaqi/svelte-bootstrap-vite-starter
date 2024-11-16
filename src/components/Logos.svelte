@@ -38,22 +38,3 @@
     <img src={img} class="logo {className}" {alt} height="50px" width="50px" />
   </a>
 {/each}
-
-<style>
-  .logo {
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .logo.saaqi:hover {
-    filter: drop-shadow(0 0 2em #374162);
-  }
-  .logo.bs:hover {
-    filter: drop-shadow(0 0 2em #007bff);
-  }
-</style>

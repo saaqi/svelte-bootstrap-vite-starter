@@ -1,8 +1,9 @@
-# Svelte + Vite
+# Svelte + Vite + Bootstrap
 
 This template should help get you started developing with Svelte in Vite with bootstrap.
 
-> **IMPORTANT:** For some reason, PostCSS removes all styling embedded in the `.svelte` files. Make sure to write all styling in separate CSS files and import them into the component. See the example in `src/components/Logos.svelte`.
+> [!IMPORTANT]
+>  For some reason, PostCSS removes all styling embedded in the `.svelte` files. Make sure to write all styling in separate CSS files and import them into the component. See the example in `src/components/Logos.svelte`.
 
 ## Recommended IDE Setup
 
@@ -33,13 +34,13 @@ Other templates indirectly recommend extensions via the README, but this file al
 
 **Why enable `checkJs` in the JS template?**
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+Most cases of changing variable types in runtime are likely to be accidental rather than deliberate. This provides advanced type checking out of the box. Should you like to take advantage of JavaScript's dynamically typed nature, changing the configuration is trivial.
 
 **Why is HMR not preserving my local component state?**
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
+HMR state preservation comes with several gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+If you have a state that's important to retain within a component, consider creating an external store that would not be replaced by HMR.
 
 ```js
 // store.js

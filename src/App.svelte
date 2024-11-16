@@ -40,7 +40,7 @@
           class="text-decoration-underline link-light"
           rel="noreferrer"
         >
-          Google PageSpeed Rport
+          Google PageSpeed Report
         </a>
       </p>
 

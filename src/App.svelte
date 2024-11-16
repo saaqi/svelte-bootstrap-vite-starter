@@ -34,6 +34,17 @@
       </p>
 
       <p>
+        <a
+          href="https://pagespeed.web.dev/report?url={window.location.href}"
+          target="_blank"
+          class="text-decoration-underline link-light"
+          rel="noreferrer"
+        >
+          Google PageSpeed Rport
+        </a>
+      </p>
+
+      <p>
         Written by
         <a
           class="text-decoration-underline link-warning"

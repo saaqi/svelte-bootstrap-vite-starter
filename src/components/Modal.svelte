@@ -22,8 +22,8 @@
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered" data-bs-theme="dark">
-    <div class="modal-content bg-dark">
-      <div class="modal-header border-black">
+    <div class="modal-content bg-body-secondary">
+      <div class="modal-header">
         <h1 class="modal-title fs-5" id="demoModalLabel">Demo Modal title</h1>
         <button type="button" class="btn-close btn" data-bs-dismiss="modal" aria-label="Close"
         ></button>
@@ -35,7 +35,7 @@
         goofballs hunt anything that moves hide when guests come over intrigued by the shower stand
         in front of the computer screen rub face on everything.
       </div>
-      <div class="modal-footer border-black">
+      <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>

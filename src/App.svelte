@@ -4,7 +4,7 @@
   import Modal from './components/Modal.svelte';
 </script>
 
-<main class="bg-dark text-light">
+<main class="bg-dark text-bg-dark">
   <div class="container svh-100 d-flex align-items-center py-5">
     <div class="row text-center text-md-start">
       <div class="mb-5 d-flex gap-3 justify-content-md-start justify-content-center">

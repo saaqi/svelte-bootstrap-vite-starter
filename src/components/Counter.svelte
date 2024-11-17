@@ -1,6 +1,4 @@
 <script>
-  // Import styling for the component
-  import './Logos.css';
   // Create a variable to hold the count value, initialized to 0
   let count = $state(0);
 </script>

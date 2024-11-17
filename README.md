@@ -2,9 +2,6 @@
 
 This template should help get you started developing with Svelte in Vite with bootstrap.
 
-> [!IMPORTANT]
->  For some reason, PostCSS removes all styling embedded in the `.svelte` files. Make sure to write all styling in separate CSS files and import them into the component. See the example in `src/components/Logos.svelte`.
-
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).

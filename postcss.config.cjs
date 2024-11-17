@@ -26,8 +26,11 @@ module.exports = {
         ],
         whitelistPatterns: [/svelte-/, /fa-icon/],
         defaultExtractor(content) {
+          // Remove <style> blocks from the content to prevent PurgeCSS from skipping inline styles
           const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '');
-          return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || [];
+          // Extract classes and identifiers from the content without style blocks
+          const matches = contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || [];
+          return matches;
         },
         keyframes: true, // remove unsed keyframe rules
         variables: true // remove unused variables as well

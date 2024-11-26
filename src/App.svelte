@@ -7,7 +7,7 @@
 <main>
   <div class="container svh-100 d-flex align-items-center py-5">
     <div class="row text-center text-md-start">
-      <div class="mb-5 d-flex gap-3 justify-content-md-start justify-content-center">
+      <div class="mb-5 d-flex justify-content-between col-md-6">
         <Logos />
       </div>
 

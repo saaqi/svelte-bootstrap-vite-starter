@@ -32,7 +32,7 @@ module.exports = {
           const matches = contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || [];
           return matches;
         },
-        safelist: [/svelte-/],
+        safelist: [/svelte-/, /modal-backdrop/],
         keyframes: true, // remove unsed keyframe rules
         variables: true // remove unused variables as well
       }),

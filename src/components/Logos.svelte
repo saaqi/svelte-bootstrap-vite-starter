@@ -7,25 +7,25 @@
   const logoLinks = [
     {
       link: 'https://vite.dev',
-      img: viteLogo,
+      src: viteLogo,
       alt: 'Vite Logo',
       className: 'vite'
     },
     {
       link: 'https://svelte.dev',
-      img: svelteLogo,
+      src: svelteLogo,
       alt: 'svelte Logo',
       className: 'svelte'
     },
     {
       link: 'https://getbootstrap.com/docs/5.3/getting-started/introduction/',
-      img: bootstrap,
+      src: bootstrap,
       alt: 'Bootstrap Logo',
       className: 'bs'
     },
     {
       link: 'https://saqibtech.com',
-      img: saaqiLogo,
+      src: saaqiLogo,
       alt: 'Saqib Islam - UI/UX Desginer & Full Stack Developer',
       className: 'saaqi'
     }
@@ -33,9 +33,9 @@
 </script>
 
 <!-- This block iterates over an array of logoLinks and generates an anchor (<a>) element for each item. -->
-{#each logoLinks as { link, img, alt, className }, index ('logo#' + index)}
+{#each logoLinks as { link, src, alt, className }, index ('logo#' + index)}
   <a href={link} target="_blank" rel="noreferrer">
-    <img src={img} class="logo {className}" {alt} height="50px" width="50px" />
+    <img {src} {alt} class="logo {className}" height="50" />
   </a>
 {/each}
 

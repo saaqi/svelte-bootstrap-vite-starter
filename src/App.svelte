@@ -18,7 +18,12 @@
       <div class="mb-5 col-xl-4 col-md-6">
         <div class="mb-3 d-flex justify-content-between gap-3">
           <Counter />
-          <Modal />
+          <Modal
+            id="modal-demo"
+            btnTitle="Modal Demo"
+            modalTitle="Cat's Diary"
+            body="Make muffins give attitude chase mice sweet beast under the bed all of a sudden go crazy behind the couch destroy couch intently stare at the same spot chew ipad power cord bag stretch claw drapes, leave dead animals as gifts attack feet flop over hopped up on goofballs hunt anything that moves hide when guests come over intrigued by the shower stand in front of the computer screen rub face on everything."
+          />
         </div>
 
         <div>

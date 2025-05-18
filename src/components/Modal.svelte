@@ -1,18 +1,13 @@
-<script lang="ts">
+<script>
   // import 'bootstrap/js/dist/modal.js';
   const {
     btnTitle = 'Demo Modal',
     modalTitle = 'Demo Modal title',
     modalId = 'demoModal',
     body = `Hello, I'm a modal!`
-  }: {
-    btnTitle?: string;
-    modalTitle?: string;
-    modalId?: string;
-    body?: string;
   } = $props()
 
-  const idLabel : string = modalId + 'Label';
+  const idLabel = modalId + 'Label';
 </script>
 
 <!-- Button trigger modal -->

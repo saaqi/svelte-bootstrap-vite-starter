@@ -1,7 +1,7 @@
-<script lang="ts">
+<script>
   // Create a variable to hold the count value, initialized to 0
-  let count : number = $state(0);
-  const times : string = $derived(count == 1 ? 'time' : 'times');
+  let count = $state(0);
+  const times = $derived(count == 1 ? 'time' : 'times');
 </script>
 
 <!-- onclick event handler is set to the increment function -->

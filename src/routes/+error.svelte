@@ -1,6 +1,11 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { emojis } from './emojis';
+	// Reactive statement to set the URL on the client side
+	let pageURL = '';
+	$: if (typeof window !== 'undefined') {
+    pageURL = `${window.location.origin}`;
+	}
 </script>
 
 <svelte:head>
@@ -24,7 +29,7 @@
 			well, consider navigating back to our homepage to explore anew. Thanks for your understanding!
 		</p>
 
-		<a href="/">Go To Homepage</a>
+		<a href={pageURL}>Go To Homepage</a>
 	</div>
 </div>
 
@@ -32,10 +37,6 @@
 	* {
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
-	}
-
-	body {
-		font-family: sans-serif;
 	}
 
 	#notfound {

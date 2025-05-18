@@ -21,7 +21,6 @@
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.21.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
-		"@types/node": "^22.15.18",
 		"autoprefixer": "^10.4.21",
 		"cssnano": "^7.0.7",
 		"eslint": "^9.27.0",
@@ -35,8 +34,6 @@
 		"sass-embedded": "^1.89.0",
 		"svelte": "^5.30.2",
 		"svelte-check": "^4.2.1",
-		"typescript": "^5.8.3",
-		"typescript-eslint": "^8.32.1",
 		"vite": "^6.3.5",
 		"vite-plugin-minify": "^2.1.0",
 		"vite-plugin-webfont-dl": "^3.10.4"

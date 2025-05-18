@@ -1,10 +1,10 @@
 <script>
 	import Logos from '../components/Logos.svelte';
 	import Counter from '../components/Counter.svelte';
-	import Modal from '../components/Modal.svelte';
-	let pageSpeedUrl = '';
+	import Modal from '../components/Modal.svelte'
 
 	// Reactive statement to set the URL on the client side
+	let pageSpeedUrl = '';
 	$: if (typeof window !== 'undefined') {
 		pageSpeedUrl = `https://pagespeed.web.dev/report?url=${window.location.href}`;
 	}

@@ -37,6 +37,8 @@ export default defineConfig({
 
   build: {
     // outDir: "./docs",
+    outDir: './build',
+    emptyOutDir: true,
     minify: 'terser',
     terserOptions: {
       format: {

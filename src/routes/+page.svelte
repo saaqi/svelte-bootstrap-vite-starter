@@ -1,4 +1,6 @@
 <script>
+	import "$lib/styles/style.scss"
+
 	import Logos from '../components/Logos.svelte';
 	import Counter from '../components/Counter.svelte';
 	import Modal from '../components/Modal.svelte'

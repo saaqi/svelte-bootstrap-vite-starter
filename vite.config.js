@@ -11,25 +11,25 @@ export default defineConfig({
 
 		/* ## Download Google Fonts and attach them with production build for offline use
     --------------------------------------------- */
-    // IN_PRODUCTION && webfontDownload([
+		// IN_PRODUCTION && webfontDownload([
 		// 	'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'
 		// ]),
 
 		/* ## Minify the output HTML files in production
     --------------------------------------------- */
-    IN_PRODUCTION && ViteMinifyPlugin({})
+		IN_PRODUCTION && ViteMinifyPlugin({})
 	],
 	css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern'
-      }
-    }
+		preprocessorOptions: {
+			scss: {
+				api: 'modern'
+			}
+		}
 	},
 
 	base: './',
-  server: {
-    port: 3000
+	server: {
+		port: 3000
 	},
 
 	build: {
@@ -41,6 +41,4 @@ export default defineConfig({
 			}
 		}
 	}
-
-
 });

@@ -1,8 +1,8 @@
 <script>
-  import svelteLogo from '$lib/assets/svelte.svg';
-  import viteLogo from '$lib/assets/vite.svg';
-  import saaqiLogo from '$lib/assets/logo.svg';
-  import bootstrap from '$lib/assets/bootstrap.svg';
+  import svelteLogo from '../assets/svelte.svg';
+  import viteLogo from '../assets/vite.svg';
+  import saaqiLogo from '../assets/logo.svg';
+  import bootstrap from '../assets/bootstrap.svg';
 
   const logoLinks = [
     {

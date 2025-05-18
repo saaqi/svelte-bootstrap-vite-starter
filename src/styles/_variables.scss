@@ -1,6 +1,3 @@
-@charset "UTF-8";
-
-// override bootstrap variables
 // Bootstrap over rides ---
 
 // Colors ----------
@@ -9,7 +6,3 @@ $secondary: #f9d949;
 
 // Typography ------
 $font-family-sans-serif: Inter, sans-serif;
-
-
-// import bootstrap scss
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';

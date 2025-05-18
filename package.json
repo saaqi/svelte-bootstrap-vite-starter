@@ -10,7 +10,7 @@
     "test": "vite preview",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
-    "build-bootstrap": "sass --no-source-map ./src/styles/bs-dynamic.scss ./src/styles/bootstrap.css"
+    "build-bootstrap": "sass --no-source-map ./src/lib/styles/bs-dynamic.scss ./src/lib/styles/bootstrap.css"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
